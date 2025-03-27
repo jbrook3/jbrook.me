@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jbrook.me</title>
+  <style>
+    :root {
+      --bg-start: #0f0c29;
+      --bg-mid: #302b63;
+      --bg-end: #24243e;
+      --accent: #61dafb;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, var(--bg-start), var(--bg-mid), var(--bg-end));
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 700px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-bottom: 2rem;
+    }
+
+    .highlight {
+      color: var(--accent);
+    }
+
+    .links a {
+      text-decoration: none;
+      color: var(--accent);
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2.2rem; }
+      p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to <span class="highlight">jbrook.me</span></h1>
+    <p>A new digital space is coming soon. Powered by code, caffeine, and curiosity.</p>
+    <div class="links">
+      <a href="mailto:hey@jbrook.me">Email</a>
+      <a href="https://github.com/YOUR_GITHUB" target="_blank">GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
